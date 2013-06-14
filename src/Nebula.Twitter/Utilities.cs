@@ -9,6 +9,13 @@ using System.Text.RegularExpressions;
 namespace Nebula.Twitter {
     public class Utilities {
 
+        /// <summary>
+        /// Fetchs a Twitter Application Bearer Token
+        /// Implemented according to https://dev.twitter.com/docs/auth/application-only-auth
+        /// </summary>
+        /// <param name="consumerKey">Twitter Application Consumer Key</param>
+        /// <param name="consumerSecret">Twitter Application Consumer Secret</param>
+        /// <returns>Application Bearer Access Token</returns>
         public static string GetApplicationBearerToken(string consumerKey, string consumerSecret) {
 
             string token;
