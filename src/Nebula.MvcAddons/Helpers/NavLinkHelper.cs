@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MvcAddons.Helpers {
+namespace Nebula.MvcAddons.Helpers {
     public static partial class NavLinkHelper {
 
         public static IHtmlString NavLink(this HtmlHelper helper, string action, string controller, string text, bool matchControllerOnly = false) {

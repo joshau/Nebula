@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace State.Mock {
+namespace Nebula.State.Mock {
 
     public class StateMock : Interfaces.IState {
 

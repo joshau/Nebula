@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 using NUnit.Framework;
 
-namespace MvcAddons.Test.Extensions {
+namespace Nebula.MvcAddons.Test.Extensions {
     public static class RedirectToRouteResultExtensions {
 
         public static void VerifyRedirectToRoute(this RedirectToRouteResult result, string ExpectedAction, string ExpectedController = null) {

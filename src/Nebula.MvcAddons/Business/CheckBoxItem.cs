@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MvcAddons.Business {
+namespace Nebula.MvcAddons.Business {
 
     public class CheckBoxItem {
         public string Code { get; set; }

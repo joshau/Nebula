@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace MvcAddons.Controllers {
+namespace Nebula.MvcAddons.Controllers {
     public abstract class BaseAdminController : BaseController {
 
         protected string _AbandonSession() {

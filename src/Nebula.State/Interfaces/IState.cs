@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace State.Interfaces {
+namespace Nebula.State.Interfaces {
     public interface IState {
 
         void Abandon();

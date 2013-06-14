@@ -17,7 +17,7 @@ namespace Nebula.Error {
             string recipients, 
             string subject, 
             string smtpServer, 
-            int smtpPort = 25, 
+            string smtpPort = "25", 
             string smtpUsername = "", 
             string smtpPassword = "") {
 

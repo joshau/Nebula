@@ -3,7 +3,7 @@ using System.IO;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MvcAddons.Controllers {
+namespace Nebula.MvcAddons.Controllers {
 
     public abstract class BaseController : Controller {
 

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MvcAddons.Helpers {
+namespace Nebula.MvcAddons.Helpers {
 
     public static partial class ContentAbsoluteUrlHelper {
 

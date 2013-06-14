@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace State {
+namespace Nebula.State {
 
     public class Session : Interfaces.IState {
     

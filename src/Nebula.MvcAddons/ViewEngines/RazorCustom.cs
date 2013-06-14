@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 
-namespace MvcAddons.ViewEngines {
+namespace Nebula.MvcAddons.ViewEngines {
 
     //Snatched from http://coding-in.net/mvc-3-organize-your-partial-views/
     //

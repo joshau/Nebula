@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 
-namespace MvcAddons.Helpers {
+namespace Nebula.MvcAddons.Helpers {
     public static class EnumHelpers {
 
         public static SelectList ToSelectList<TEnum>(this TEnum enumObj) where TEnum : struct, IConvertible {

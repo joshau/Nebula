@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 
-namespace MvcAddons.Controllers {
+namespace Nebula.MvcAddons.Controllers {
     public static class ControllerExtension {
 
         public static void ValidateViewModel(this Controller controller, object model) {

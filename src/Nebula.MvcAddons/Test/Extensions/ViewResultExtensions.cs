@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 using NUnit.Framework;
 
-namespace MvcAddons.Test.Extensions {
+namespace Nebula.MvcAddons.Test.Extensions {
     public static class ViewResultExtensions {
 
         public static void VerifyView(this ViewResult result, string ExpectedView) {

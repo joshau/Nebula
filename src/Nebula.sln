@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.MvcAddons", "Nebula.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Error", "Nebula.Error\Nebula.Error.csproj", "{50FC9CD5-412E-4E39-9D8A-00E6B26E5E8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Twitter", "Nebula.Twitter\Nebula.Twitter.csproj", "{9F228106-DFD7-482B-88E9-A887A2E45297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{50FC9CD5-412E-4E39-9D8A-00E6B26E5E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50FC9CD5-412E-4E39-9D8A-00E6B26E5E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50FC9CD5-412E-4E39-9D8A-00E6B26E5E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F228106-DFD7-482B-88E9-A887A2E45297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F228106-DFD7-482B-88E9-A887A2E45297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F228106-DFD7-482B-88E9-A887A2E45297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F228106-DFD7-482B-88E9-A887A2E45297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

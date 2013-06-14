@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MvcAddons.Attributes {
+namespace Nebula.MvcAddons.Attributes {
 
     public class HttpHeaderAttribute : ActionFilterAttribute {
     

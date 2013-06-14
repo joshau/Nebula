@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MvcAddons.Helpers {
+namespace Nebula.MvcAddons.Helpers {
     public static partial class TextBoxDisabledHelper {
 
         public static MvcHtmlString TextBoxDisabledFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper,

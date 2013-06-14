@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace MvcAddons.Business {
+namespace Nebula.MvcAddons.Business {
     public class File {
 
         private string _basePath;
