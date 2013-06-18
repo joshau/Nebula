@@ -58,7 +58,8 @@ namespace Nebula.Error {
             // Send out the notification
             message = new MailMessage(sender, recipients, subject, sb.ToString());
             mailer = new SmtpClient(smtpServer);
-            mailer.Port = Convert.ToInt32(smtpPort);
+
+            mailer.Port = Convert.ToInt32(string.IsNullOrEmpty(smtpPort) ? "25" : smtpPort);
             
             if (!string.IsNullOrEmpty(smtpUsername)) mailer.Credentials = new System.Net.NetworkCredential(smtpUsername, smtpPassword);
 
