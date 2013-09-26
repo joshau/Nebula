@@ -29,6 +29,6 @@ namespace Nebula.Facebook {
             HMACSHA256 hmacSha256 = new HMACSHA256(bytesKey);
 
             return Convert.ToBase64String(hmacSha256.ComputeHash(bytesPayload));
-        }        
+        }
     }
 }
