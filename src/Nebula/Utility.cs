@@ -12,7 +12,7 @@ namespace Nebula {
 
             string text = null;
             WebRequest request = WebRequest.Create(url);
-            WebResponse response;
+            WebResponse response = null;
 
             try {
                 response = request.GetResponse();
@@ -23,6 +23,10 @@ namespace Nebula {
             }
             catch (Exception ex) {
                 throw new Exception(string.Format("Error fetching data at {0}.", url), ex);
+            }
+            finally {
+                if (response != null)
+                    response.Close();
             }
 
             return text;

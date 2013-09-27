@@ -43,6 +43,7 @@
     <Compile Include="Business\SignedRequest.cs" />
     <Compile Include="Business\SignedRequestPage.cs" />
     <Compile Include="Business\SignedRequestUser.cs" />
+    <Compile Include="Exceptions\FacebookException.cs" />
     <Compile Include="Facebook.cs" />
     <Compile Include="FacebookTab.cs" />
     <Compile Include="Utility.cs" />

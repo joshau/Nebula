@@ -16,11 +16,7 @@ namespace Nebula.Facebook {
             bytes = Convert.FromBase64String(s);
 
             return Encoding.UTF8.GetString(bytes);
-        }
-
-        public static Business.SignedRequest DeserializeSignedRequest(string json) {
-            return (new JavaScriptSerializer()).Deserialize<Business.SignedRequest>(json);
-        }
+        }        
 
         public static string GeneratorSignatureHash(string payload, string secretKey) {
 
@@ -29,6 +25,21 @@ namespace Nebula.Facebook {
             HMACSHA256 hmacSha256 = new HMACSHA256(bytesKey);
 
             return Convert.ToBase64String(hmacSha256.ComputeHash(bytesPayload));
+        }
+
+        public static void VerifyPayload(string payload) {
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            var payload_json = js.Deserialize<dynamic>(Utility.GetWebResponse(payload));
+
+            VerifyPayload(payload_json);
+        }
+
+        public static void VerifyPayload(dynamic payload) {
+
+            if (payload.error != null) {
+                throw new Exceptions.FacebookException(payload.error.message, payload.error.type, (int)payload.error.code);
+            }
         }
     }
 }
