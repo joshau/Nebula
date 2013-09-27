@@ -21,7 +21,7 @@ namespace Nebula.Facebook.Tests {
         public void ValidAccessToken() {
 
             this.facebook = new Facebook(APPLICATION_ID, APPLICATION_SECRET);
-            string access_token = facebook.GetAccessToken();
+            string access_token = facebook.GetApplicationAccessToken();
 
             Assert.IsNotNull(access_token);
         }

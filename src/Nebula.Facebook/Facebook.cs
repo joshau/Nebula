@@ -20,7 +20,7 @@ namespace Nebula.Facebook {
             this.secret = secret;            
         }
 
-        public string GetAccessToken() {
+        public string GetApplicationAccessToken() {
 
             string url = String.Format("{0}?type=client_cred&client_id={1}+&client_secret={2}", 
                 FACEBOOK_GRAPH_ACCESS_TOKEN_URL, this.id.ToString(), this.secret);
@@ -44,7 +44,7 @@ namespace Nebula.Facebook {
             return GetFacebookToken(response);
         }
 
-        public bool VerifyAccessToken(long user_id, string user_access_token, string app_access_token) {
+        public bool VerifyUserAccessToken(long user_id, string user_access_token, string app_access_token) {
 
             JavaScriptSerializer js = new JavaScriptSerializer();
             string url = string.Format("{0}?input_token={1}&access_token={2}", user_access_token, app_access_token);
