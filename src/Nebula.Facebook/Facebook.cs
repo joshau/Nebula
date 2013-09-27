@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Web.Script.Serialization;
 
 namespace Nebula.Facebook {
-    public class Facebook {
+    public class Facebook : Interface.IFacebook {
 
         private const string FACEBOOK_GRAPH_ACCESS_TOKEN_URL = "https://graph.facebook.com/oauth/access_token";
         private const string FACEBOOK_GRAPH_DEBUG_TOKEN_URL = "https://graph.facebook.com/oauth/debug_token";
