@@ -28,8 +28,14 @@ namespace Nebula {
                 if (response != null)
                     response.Close();
             }
-
+            
             return text;
         }
+
+        public void GetWebResponseAsync(string url, EventHandler<DownloadStringCompletedEventArgs> callback) {
+            WebClient client = new WebClient();
+            client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(callback);
+            client.DownloadStringAsync(new Uri(url));
+        }        
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web.Script.Serialization;
 
 namespace Nebula.Facebook {
     internal class Utility : Nebula.Utility {
@@ -28,11 +27,7 @@ namespace Nebula.Facebook {
         }
 
         public static void VerifyPayload(string payload) {
-
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            var payload_json = js.Deserialize<dynamic>(Utility.GetWebResponse(payload));
-
-            VerifyPayload(payload_json);
+            VerifyPayload(SimpleJson.DeserializeObject(payload));
         }
 
         public static void VerifyPayload(dynamic payload) {

@@ -29,7 +29,7 @@ namespace Nebula.Facebook.Business {
             string signature = Utility.Base64UrlDecode(encodedSignature);
             string data = Utility.Base64UrlDecode(payload);
             SignedRequest signReq = js.Deserialize<Business.SignedRequest>(data);
-
+            
             if(signReq.algorithm.ToUpper() != FACEBOOK_ALGORITHM) {
                 throw new Exceptions.InvalidAlgorithmException(String.Format("Unknown algorithm ({0}). Expected {1}.", signReq.algorithm.ToUpper(), FACEBOOK_ALGORITHM));
             }

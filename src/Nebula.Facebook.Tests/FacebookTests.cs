@@ -24,6 +24,6 @@ namespace Nebula.Facebook.Tests {
             string access_token = facebook.GetApplicationAccessToken();
 
             Assert.IsNotNull(access_token);
-        }
+        }       
     }
 }
