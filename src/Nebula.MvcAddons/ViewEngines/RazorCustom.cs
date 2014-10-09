@@ -7,8 +7,8 @@ namespace Nebula.MvcAddons.ViewEngines {
     //
     //Register this view engine on Application-Start()
     //ViewEngines.Engines.Add(new RazorCustom());
-    public class RazorCustom : RazorViewEngine {
-
+    public class RazorCustom : RazorViewEngine, IViewEngine {
+        
         public RazorCustom() {
 
             string[] newLocationFormat = new[] {
