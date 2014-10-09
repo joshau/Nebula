@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Nebula.OAuth")]
+[assembly: AssemblyTitle("Nebula.Cryptography.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Nebula.OAuth")]
+[assembly: AssemblyProduct("Nebula.Cryptography.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c8248a0c-baea-41c9-9595-5ff437f626d5")]
+[assembly: Guid("2e54db9d-dc2c-43f8-a220-75b08fb00d28")]
 
 // Version information for an assembly consists of the following four values:
 //

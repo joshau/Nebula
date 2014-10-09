@@ -7,7 +7,6 @@ using Nebula.BazaarVoice.Business;
 
 namespace Nebula.BazaarVoice.Interface {
     public interface IBazaarVoice {
-
         Response ReviewPreview(Review review, string hostname, string apiVersion, string passkey);
         Response ReviewSubmit(Review review, string hostname, string apiVersion, string passkey);
         string GetProductJson(int count, int offset, string hostname, string apiVersion, string passkey);
