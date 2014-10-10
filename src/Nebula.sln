@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Cryptography", "Nebu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Cryptography.Tests", "Nebula.Cryptography.Tests\Nebula.Cryptography.Tests.csproj", "{E7B4A416-C6DF-4026-A57F-D23C82E9910A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.AddressValidation", "Nebula.AddressValidation\Nebula.AddressValidation.csproj", "{366E56DD-EDDC-4E51-8C25-50703BF0D2CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.AddressValidation.Tests", "Nebula.AddressValidation.Tests\Nebula.AddressValidation.Tests.csproj", "{388C75CE-AF29-4BF9-BFDE-7E163992D960}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{E7B4A416-C6DF-4026-A57F-D23C82E9910A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7B4A416-C6DF-4026-A57F-D23C82E9910A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7B4A416-C6DF-4026-A57F-D23C82E9910A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366E56DD-EDDC-4E51-8C25-50703BF0D2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366E56DD-EDDC-4E51-8C25-50703BF0D2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366E56DD-EDDC-4E51-8C25-50703BF0D2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366E56DD-EDDC-4E51-8C25-50703BF0D2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
