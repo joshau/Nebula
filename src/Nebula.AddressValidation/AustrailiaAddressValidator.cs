@@ -53,7 +53,7 @@ namespace Nebula.AddressValidation {
       return address_concat;
     }
 
-    public string[] GetMatches(string address_concat) {
+    public List<string> GetMatches(string address_concat) {
       List<string> matches = new List<string>();
 
       List<string> matches_street = new List<string>();
@@ -67,7 +67,7 @@ namespace Nebula.AddressValidation {
       matches.AddRange(matches_street);
       matches.AddRange(matches_unit);
 
-      return matches.ToArray();
+      return matches;
     }
 
     private List<string> UnitVariations(string address_concat) {

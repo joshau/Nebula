@@ -186,7 +186,7 @@ namespace Nebula.AddressValidation.Tests {
       string address_dirty = "Unit 1, 36 Clarence Street, Sydney 2000";
       string address_clean = this.validator.Sanitize(address_dirty);
 
-      string[] matches = this.validator.GetMatches(address_clean);
+      List<string> matches = this.validator.GetMatches(address_clean);
 
       Assert.Contains("unit 1, 36 clarence st, sydney 2000", matches);
     }
@@ -196,7 +196,7 @@ namespace Nebula.AddressValidation.Tests {
       string address_dirty = "Unit 1, 36 Clarence Ct, Sydney 2000";
       string address_clean = this.validator.Sanitize(address_dirty);
 
-      string[] matches = this.validator.GetMatches(address_clean);
+      List<string> matches = this.validator.GetMatches(address_clean);
 
       Assert.Contains("unit 1, 36 clarence ct, sydney 2000", matches);
       Assert.Contains("unit 1, 36 clarence court, sydney 2000", matches);
@@ -218,7 +218,7 @@ namespace Nebula.AddressValidation.Tests {
       string address_dirty = "Unit 1, 23 Somewhere st., Someplace 2000   ";
       string address_clean = this.validator.Sanitize(address_dirty);
 
-      string[] matches = this.validator.GetMatches(address_clean);
+      List<string> matches = this.validator.GetMatches(address_clean);
 
       Assert.Contains("unit 1, 23 somewhere st, someplace 2000", matches, "Missing Long");
       Assert.Contains("u1, 23 somewhere st, someplace 2000", matches, "Missing Mid");
@@ -237,7 +237,7 @@ namespace Nebula.AddressValidation.Tests {
       string address_dirty = "U1, 23 Somewhere st., Someplace 2000   ";
       string address_clean = this.validator.Sanitize(address_dirty);
 
-      string[] matches = this.validator.GetMatches(address_clean);
+      List<string> matches = this.validator.GetMatches(address_clean);
 
       Assert.Contains("unit 1, 23 somewhere st, someplace 2000", matches, "Missing Long");
       Assert.Contains("u1, 23 somewhere st, someplace 2000", matches, "Missing Mid");
@@ -256,7 +256,7 @@ namespace Nebula.AddressValidation.Tests {
       string address_dirty = "1 / 23 Somewhere st., Someplace 2000   ";
       string address_clean = this.validator.Sanitize(address_dirty);
 
-      string[] matches = this.validator.GetMatches(address_clean);
+      List<string> matches = this.validator.GetMatches(address_clean);
 
       Assert.Contains("unit 1, 23 somewhere st, someplace 2000", matches, "Missing Long");
       Assert.Contains("u1, 23 somewhere st, someplace 2000", matches, "Missing Mid");

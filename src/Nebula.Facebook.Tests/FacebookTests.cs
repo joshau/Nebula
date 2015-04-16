@@ -4,9 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using NUnit.Framework;
-
 using Nebula.Facebook;
+using NUnit.Framework;
 
 namespace Nebula.Facebook.Tests {
     [TestFixture]
@@ -24,6 +23,6 @@ namespace Nebula.Facebook.Tests {
             string access_token = facebook.GetApplicationAccessToken();
 
             Assert.IsNotNull(access_token);
-        }       
+        }
     }
 }

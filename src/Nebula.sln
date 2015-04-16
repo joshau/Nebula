@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.AddressValidation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.AddressValidation.Tests", "Nebula.AddressValidation.Tests\Nebula.AddressValidation.Tests.csproj", "{388C75CE-AF29-4BF9-BFDE-7E163992D960}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Geocoding", "Nebula.Geocoding\Nebula.Geocoding.csproj", "{4828FAE4-DAB4-4EE9-ACFD-D2E00CAAAEEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nebula.Geocoding.Tests", "Nebula.Geocoding.Tests\Nebula.Geocoding.Tests.csproj", "{F3151334-3237-45D3-9232-D11DA2146F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{388C75CE-AF29-4BF9-BFDE-7E163992D960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4828FAE4-DAB4-4EE9-ACFD-D2E00CAAAEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4828FAE4-DAB4-4EE9-ACFD-D2E00CAAAEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4828FAE4-DAB4-4EE9-ACFD-D2E00CAAAEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4828FAE4-DAB4-4EE9-ACFD-D2E00CAAAEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3151334-3237-45D3-9232-D11DA2146F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3151334-3237-45D3-9232-D11DA2146F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3151334-3237-45D3-9232-D11DA2146F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3151334-3237-45D3-9232-D11DA2146F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

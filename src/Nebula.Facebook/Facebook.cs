@@ -12,14 +12,10 @@ namespace Nebula.Facebook {
         private const string FACEBOOK_GRAPH_ACCESS_TOKEN_URL = "https://graph.facebook.com/oauth/access_token";
         private const string FACEBOOK_GRAPH_DEBUG_TOKEN_URL = "https://graph.facebook.com/debug_token";
 
-        private Utility util;
-
         public long id { get; private set; }
         public string secret { get; private set; }
 
         public Facebook(long id, string secret) {
-
-            this.util = new Utility();
             this.id = id;
             this.secret = secret;            
         }
@@ -51,7 +47,7 @@ namespace Nebula.Facebook {
 
             Exception ex = null;
 
-            this.util.GetWebResponseAsync(url, (s, e) => {
+            Nebula.Utility.GetWebResponseAsync(url, (s, e) => {
 
                 try {
                     result = GetFacebookToken(e.Result);
@@ -96,7 +92,7 @@ namespace Nebula.Facebook {
             string url = GetExchangeCodeForAccessTokenUrl(redirect_url, code);
             Exception ex = null;
 
-            this.util.GetWebResponseAsync(url, (s, e) => {
+            Nebula.Utility.GetWebResponseAsync(url, (s, e) => {
                 
                 try {
                     Utility.VerifyPayload(e.Result);
@@ -151,7 +147,7 @@ namespace Nebula.Facebook {
             string url = GetVerifyUserAccessTokenUrl(user_access_token, app_access_token);
             Exception ex = null;
 
-            this.util.GetWebResponseAsync(url, (s, e) => {
+            Nebula.Utility.GetWebResponseAsync(url, (s, e) => {
 
                 dynamic response = null;
 

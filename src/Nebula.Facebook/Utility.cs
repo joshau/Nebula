@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 
 namespace Nebula.Facebook {
-    internal class Utility : Nebula.Utility {
+    internal partial class Utility : Nebula.Utility {
 
         public static string Base64UrlDecode(string s) {
 
